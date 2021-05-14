@@ -1,0 +1,22 @@
+.Weather {
+  border: 6px solid rgba(153, 153, 153, 0.8);
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  list-style: none;
+  font-size: 22px;
+  margin: 30px auto;
+}
+.MyForm {
+  display: block;
+  margin: 30px;
+  position: inherit;
+}
+.List {
+  list-style: none;
+}
+.Right {
+  text-align: right;
+  padding: 20px;
+}
