@@ -20,3 +20,6 @@
   text-align: right;
   padding: 20px;
 }
+.Capitalize {
+  text-transform: capitalize;
+}
