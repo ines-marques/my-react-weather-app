@@ -15,16 +15,17 @@ export default function Weather(props) {
             humidity: response.data.main.humidity,
             description: response.data.weather[0].description,
             city: response.data.name,
-            date: new Date(response.data.dt * 1000)   
+            date: new Date(response.data.dt * 1000),
+            icon: response.data.weather[0].icon  
         });
     }
-    
+
     function search() {
         const apiKey = "178be0a79146aa22863d056738d4f9b4";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(handleResponse);
     }
-    
+
     function handleSubmit(event) {
         event.preventDefault();
         search();
@@ -37,7 +38,7 @@ export default function Weather(props) {
     if (weatherData.ready) {
         return (
             <div className="Weather">
-                <WeatherInfo info={weatherData} />
+                <WeatherInfo data={weatherData} />
                 <form onSubmit={handleSubmit} className="MyForm">
                     <div className="row">
                         <div className="col-10">

@@ -23,3 +23,23 @@
 .Capitalize {
   text-transform: capitalize;
 }
+.Weather canvas {
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.Inline {
+  display: inline;
+}
+.Temperature {
+  font-size: 42px;
+  line-height: 64px;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.Unit {
+  font-size: 16px;
+  position: relative;
+}
