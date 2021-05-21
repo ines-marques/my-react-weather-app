@@ -24,7 +24,6 @@
 }
 .Weather canvas {
   margin-top: 20px;
-  margin-left: 28px;
 }
 .Temperature {
   font-size: 40px;
@@ -43,4 +42,7 @@
 }
 .Weather a {
   text-decoration: none;
+}
+.float-left {
+  margin-left: 28px;
 }
